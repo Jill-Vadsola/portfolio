@@ -21,7 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://jillvadsola.dev";
+const siteUrl = "https://jillvadsola.me";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
