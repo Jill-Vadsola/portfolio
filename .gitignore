@@ -1,0 +1,23 @@
+# OS
+.DS_Store
+
+# Dependencies / build (belt-and-suspenders; web/.gitignore also covers these)
+node_modules/
+.next/
+out/
+dist/
+
+# Environment
+.env
+.env.local
+.env*.local
+
+# Local Claude Code config + local skill/plugin copies (not part of the app)
+.claude/
+
+# Logs
+*.log
+
+# Scaffold-generated agent notes (kept locally, not committed)
+web/CLAUDE.md
+web/AGENTS.md
