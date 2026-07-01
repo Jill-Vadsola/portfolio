@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, Mail, MapPin } from "lucide-react";
-import { GitHubIcon, LinkedInIcon } from "./BrandIcons";
+import { LinkedInIcon } from "./BrandIcons";
 import { profile } from "@/lib/data";
 
 function useTypedRoles(words: readonly string[]) {
