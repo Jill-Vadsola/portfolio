@@ -18,7 +18,6 @@ export const profile = {
   location: "Edmonton, AB, Canada",
   email: "vadsolajill@gmail.com",
   phone: "+1 825-522-1696",
-  // TODO(Jill): replace with your real LinkedIn URL — this is a best guess.
   linkedin: "https://www.linkedin.com/in/jillvadsola/",
   resumeUrl: "/Jill_Vadsola_Resume.pdf",
   summary:
