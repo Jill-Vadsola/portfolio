@@ -21,3 +21,5 @@ dist/
 # Scaffold-generated agent notes (kept locally, not committed)
 web/CLAUDE.md
 web/AGENTS.md
+.vercel
+.env*
