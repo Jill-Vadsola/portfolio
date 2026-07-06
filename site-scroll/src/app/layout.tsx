@@ -30,12 +30,15 @@ export const metadata: Metadata = {
   keywords: [
     "Jill Vadsola",
     "AI Engineer",
+    "Full-Stack Engineer",
     "Agentic AI",
     "LLM",
     "RAG",
     "Mastra",
     "TypeScript",
+    "React",
     "Next.js",
+    "Node.js",
   ],
   authors: [{ name: profile.name }],
   openGraph: {

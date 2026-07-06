@@ -4,11 +4,11 @@ export const profile = {
   name: "Jill Vadsola",
   role: "AI Engineer",
   /** Hero intro line — the transition that frames the story. */
-  roleArc: "Software Engineer → AI Engineer",
+  roleArc: "Full-Stack Engineer → AI Engineer",
   /** Hero outro line, revealed as the laptop finishes opening. */
   tagline: "Building agentic AI, end to end",
   summary:
-    "Software engineer with 2 years of production experience, now specializing in agentic AI and LLM application development. Full-stack foundation across React, Next.js, and Node, with hands-on AWS and CI/CD. Based in Edmonton, AB, open to roles across Canada.",
+    "A full-stack software engineer with 2 years of production experience, now specializing in agentic AI and LLM application development. Strong foundation across React, Next.js, Node.js, and REST API design — backed by hands-on AWS, CI/CD, and Git. Based in Edmonton, AB, open to roles across Canada.",
   email: "vadsolajill@gmail.com",
   phone: "+1 825-522-1696",
   phoneHref: "tel:+18255221696",
@@ -72,12 +72,55 @@ export const experience: Experience[] = [
   },
 ];
 
-export const featuredProject = {
-  eyebrow: "Featured project",
-  title: "Agentic AI Underwriting Assistant",
-  blurb: "An end-to-end production LLM application — the full pipeline, shipped.",
-  stack: ["TypeScript", "Mastra", "RAG", "Vector DB", "OpenRouter", "Multi-tenant"],
+export type Project = {
+  title: string;
+  year: string;
+  blurb: string;
+  highlights: string[];
+  stack: string[];
+  featured?: boolean;
 };
+
+export const projects: Project[] = [
+  {
+    title: "Agentic Underwriting Assistant",
+    year: "2026",
+    blurb:
+      "A multi-step agentic AI that grounds underwriting decisions in carrier rules — an end-to-end production LLM application, shipped.",
+    highlights: [
+      "RAG over a vector database to ground answers & cut hallucinations",
+      "Multi-tier OpenRouter gateway balancing latency, cost & accuracy",
+      "Parallel risk assessment across 6 carriers with rate-class recommendation",
+      "Applicant-scoped multi-tenant access control",
+    ],
+    stack: ["TypeScript", "Mastra", "OpenRouter", "Vector DB", "RAG", "Multi-tenant"],
+    featured: true,
+  },
+  {
+    title: "Internal Analytics Platform",
+    year: "2025",
+    blurb: "A high-throughput analytics UI + data pipeline shipped inside Amazon.",
+    highlights: [
+      "40% faster analytics pages via custom Java aggregation endpoints",
+      "Cross-region pipeline: Kinesis, EventBridge & Java Lambdas",
+      "Streamed up to 100,000 records from Elasticsearch per request",
+      "Shipped through code review & CI/CD (CodeDeploy, S3)",
+    ],
+    stack: ["React", "TypeScript", "Java", "Elasticsearch", "AWS"],
+  },
+  {
+    title: "Statistics Dashboard & Web App",
+    year: "2023",
+    blurb: "A customer-facing React dashboard with a tuned Node.js data layer.",
+    highlights: [
+      "Owned UI end to end: layout, styling, responsive & cross-browser",
+      "Node.js REST services powering the dashboard data layer",
+      "30% faster APIs via query tuning & indexing on PostgreSQL / MySQL",
+      "Delivered in Agile sprints with product, design & QA",
+    ],
+    stack: ["React.js", "Node.js", "PostgreSQL", "MySQL"],
+  },
+];
 
 export type SkillGroup = { label: string; items: string[] };
 
